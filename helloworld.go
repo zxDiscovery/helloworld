@@ -9,7 +9,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("helloworld: received a request")
-	target := os.Getenv("TARGET")
+	target := os.Getenv("SIMPLE_MSG")
 	if target == "" {
 		target = "World"
 	}
